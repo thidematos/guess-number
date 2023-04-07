@@ -179,9 +179,10 @@ hr {
     flex-flow: column nowrap;
     justify-content: space-evenly;
     align-items: center;
-    width: 52rem;
+    width: 100vw;
     height: 40vh;
     font-size: 2rem;
+    padding: 0 1%;
   }
 
   /* ELEMENTS STYLE */
@@ -251,7 +252,7 @@ hr {
   }
 
   .message {
-    height: 3rem;
     text-align: center;
+    margin-bottom: 0;
   }
 }
