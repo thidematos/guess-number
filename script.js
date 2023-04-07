@@ -51,6 +51,7 @@ checkBtn.addEventListener('click', function () {
     if (score.value > highScore.value) {
       highScore.textContent = score;
     }
+    creatP.remove();
   } else {
     message.textContent = '🥲 Wrong Number! Try again';
     sectionRight.insertBefore(creatP, labelScore);
