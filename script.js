@@ -45,7 +45,7 @@ checkBtn.addEventListener('click', function () {
   guess = Number(inputGuess.value);
   if (!inputGuess.value) {
     message.textContent = 'Try a Number!';
-  } else if (guess >= 20 || guess <= 1) {
+  } else if (guess >= 20 || guess < 1) {
     message.textContent = 'Invalid Number! Try a Number between 1 and 20!';
   } else if (guess === correctNumber) {
     message.textContent = '🎉 Correct Number!';
