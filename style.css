@@ -41,12 +41,7 @@ main {
 }
 
 .right {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-evenly;
-  align-items: center;
   width: 52rem;
-  height: 40vh;
   font-size: 2rem;
 }
 
@@ -54,11 +49,11 @@ main {
 h1 {
   font-size: 4rem;
   text-align: center;
-  position: static;
+  position: absolute;
   width: 100%;
-  top: 0;
-  left: 0;
-  transform: none;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .number {
@@ -68,10 +63,10 @@ h1 {
   width: 15rem;
   padding: 3rem 0rem;
   text-align: center;
-  position: static;
+  position: absolute;
   bottom: 0;
-  left: 0;
-  transform: none;
+  left: 50%;
+  transform: translate(-50%, 50%);
 }
 
 .between {
@@ -115,8 +110,12 @@ h1 {
 }
 
 .message {
+  margin-bottom: 8rem;
   height: 3rem;
-  text-align: center;
+}
+
+.label-score {
+  margin-bottom: 2rem;
 }
 
 hr {
