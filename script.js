@@ -43,7 +43,9 @@ againBtn.addEventListener('click', function () {
 checkBtn.addEventListener('click', function () {
   //Retrieve the Number Guessed
   guess = Number(inputGuess.value);
-  if (guess === correctNumber) {
+  if (!inputGuess.value) {
+    message.textContent = 'Try a Number!';
+  } else if (guess === correctNumber) {
     message.textContent = '🎉 Correct Number!';
     highScore.textContent = score.textContent;
     body.style.backgroundColor = '#39ED92';
@@ -66,11 +68,9 @@ checkBtn.addEventListener('click', function () {
         ? (creatP.textContent = `Too far`)
         : (creatP.textContent = 'Too low');
     }
-
     inputGuess.value = '';
     score.textContent = Number(score.textContent) - 1;
   }
 });
 
-console.log(document.querySelector('.right'));
 //Logic
