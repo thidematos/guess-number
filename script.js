@@ -52,7 +52,7 @@ checkBtn.addEventListener('click', function () {
     highScore.textContent = score.textContent;
     body.style.backgroundColor = '#39ED92';
     secretNumber.textContent = correctNumber;
-    if (score.value > highScore.value) {
+    if (Number(score.textContent) > Number(highScore.textContent)) {
       highScore.textContent = score;
     }
     creatP.remove();
